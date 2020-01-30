@@ -1,22 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
-import { action } from '@storybook/addon-actions';
-
 import { Button } from './Button';
 import { Icon } from './Icon';
 import { StoryLinkWrapper } from './StoryLinkWrapper';
 
-const CustomButton = styled.button`
-  border: 1px solid green;
-  background: lightgreen;
-  color: rebeccapurple;
-  padding: 1em;
-  font-size: 1.2em;
-`;
-
-function ButtonWrapper(props) {
-  return <CustomButton onClick={action('button action click')} {...props} />;
-}
+// const CustomButton = styled.button`
+//   border: 1px solid green;
+//   background: lightgreen;
+//   color: rebeccapurple;
+//   padding: 1em;
+//   font-size: 1.2em;
+// `;
+//
+// function ButtonWrapper(props) {
+//   return <CustomButton onClick={action('button action click')} {...props} />;
+// }
 
 export default {
   title: 'Design System/Button',
@@ -91,19 +88,19 @@ export const containsIcon = () => (
   </>
 );
 
-export const buttonWrapper = () => (
-  <div>
-    <ButtonWrapper>Original Button Wrapper</ButtonWrapper>
-    <br />
-    <Button ButtonWrapper={ButtonWrapper} appearance="primary">
-      Button that passes clicks through
-    </Button>
-  </div>
-);
-
-buttonWrapper.story = {
-  name: 'button wrapper',
-};
+// export const buttonWrapper = () => (
+//   <div>
+//     <ButtonWrapper>Original Button Wrapper</ButtonWrapper>
+//     <br />
+//     <Button ButtonWrapper={ButtonWrapper} appearance="primary">
+//       Button that passes clicks through
+//     </Button>
+//   </div>
+// );
+//
+// buttonWrapper.story = {
+//   name: 'button wrapper',
+// };
 
 export const anchorWrapper = () => (
   <div>

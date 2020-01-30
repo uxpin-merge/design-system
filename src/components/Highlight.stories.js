@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { Highlight } from './Highlight';
 
 const bashCode = `# Highlight bash:
@@ -146,21 +146,21 @@ export const yaml = () => (
   </>
 );
 
-const SmallContainer = styled.div`
-  max-width: 300px;
-`;
+// const SmallContainer = styled.div`
+//   max-width: 300px;
+// `;
 
-export const wrapping = () => (
-  <SmallContainer>
-    <Highlight language="javascript">{javascriptCode}</Highlight>
-  </SmallContainer>
-);
+// export const wrapping = () => (
+//   <SmallContainer>
+//     <Highlight language="javascript">{javascriptCode}</Highlight>
+//   </SmallContainer>
+// );
 
-const StyledHighlight = styled(Highlight)`
-  code,
-  pre {
-    font-size: 16px;
-  }
-`;
-
-export const customStyling = () => <StyledHighlight language="json">{jsonCode}</StyledHighlight>;
+// const StyledHighlight = styled(Highlight)`
+//   code,
+//   pre {
+//     font-size: 16px;
+//   }
+// `;
+//
+// export const customStyling = () => <StyledHighlight language="json">{jsonCode}</StyledHighlight>;

@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { action } from '@storybook/addon-actions';
 
 import { Icon } from './Icon';
 import { Link } from './Link';
-import { StoryLinkWrapper } from './StoryLinkWrapper';
+// import { StoryLinkWrapper } from './StoryLinkWrapper';
 
-const CustomLink = styled(Link)`
-  && {
-    color: red;
-  }
-`;
+// const CustomLink = styled(Link)`
+//   && {
+//     color: red;
+//   }
+// `;
 
 const onLinkClick = action('onLinkClick');
 
@@ -65,15 +65,15 @@ export const isButton = () => (
   </Link>
 );
 
-export const hasLinkWrapper = () => (
-  <>
-    {/* gatsby and styled-components don't work nicely together  */}
-    <Link tertiary LinkWrapper={StoryLinkWrapper} href="http://storybook.js.org">
-      has a LinkWrapper like GatsbyLink or NextLink
-    </Link>
-    <br />
-    <CustomLink tertiary LinkWrapper={StoryLinkWrapper} href="http://storybook.js.org">
-      has a LinkWrapper like GatsbyLink or NextLink with custom styling
-    </CustomLink>
-  </>
-);
+// export const hasLinkWrapper = () => (
+//   <>
+//     {/* gatsby and styled-components don't work nicely together  */}
+//     <Link tertiary LinkWrapper={StoryLinkWrapper} href="http://storybook.js.org">
+//       has a LinkWrapper like GatsbyLink or NextLink
+//     </Link>
+//     <br />
+//     <CustomLink tertiary LinkWrapper={StoryLinkWrapper} href="http://storybook.js.org">
+//       has a LinkWrapper like GatsbyLink or NextLink with custom styling
+//     </CustomLink>
+//   </>
+// );
